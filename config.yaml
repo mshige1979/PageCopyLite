@@ -1,0 +1,23 @@
+id: PageCopyLite
+key: PageCopyLite
+name: PageCopyLite
+version: 1.00
+l10n_class: PageCopyLite::L10N
+description: <__trans phrase="The duplicate of a web page or a report is created. ">
+author_name: m_shige1979
+author_link: 'https://twitter.com/m_shige1979/'
+
+applications:
+    cms:
+        list_actions:
+            page:
+                page_copy:
+                    label: WebPageCopy
+                    order: 1000
+                    handler: $PageCopyLite::PageCopyLite::ListAction::hdlr_func1
+                    
+            entry:
+                entry_copy:
+                    label: EntryCopy
+                    order: 1000
+                    handler: $PageCopyLite::PageCopyLite::ListAction::hdlr_func2
